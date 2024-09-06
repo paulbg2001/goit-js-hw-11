@@ -37,7 +37,7 @@ function onSearch(e) {
             .then(response => {
                 if (!response.data.hits.length) {
                     galleryEl.innerHTML = '';
-                    Notify.failure(
+                  Notiflix.Notify.failure(
                         'Sorry, there are no images matching your search query. Please try again.'
                     );
                 } else if (page >= Math.ceil(response.data.totalHits / perPage)) {
@@ -50,7 +50,7 @@ function onSearch(e) {
                 } else {
                     galleryEl.innerHTML = '';
                     renderMarkup(response);
-                    Notify.success(`Hooray! We found ${response.data.totalHits} images.`);
+                    Notiflix.Notify.success(`Hooray! We found ${response.data.totalHits} images.`);
                     lightbox.refresh();
                     loadMoreBtnEl.classList.remove('visually-hidden');
                     console.log(response.data);

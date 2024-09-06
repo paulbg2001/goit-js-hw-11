@@ -6,7 +6,7 @@
 
 body {
   font-family: system-ui;
-  background-color: #00ffaa;
+  background-color: #9accbd;
   color: #504945;
   line-height: 1.5;
 }
@@ -44,7 +44,7 @@ img {
 
 .search-form {
   text-align: center;
-  background-color: #000000;
+  background-color: #3c3939;
   padding: 30px;
   margin-bottom: 30px;
 }
